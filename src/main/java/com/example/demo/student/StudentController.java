@@ -13,8 +13,8 @@ import java.util.List;
 public class StudentController {
 
     private static final List<Student> STUDENTS = Arrays.asList(
-      new Student(1, "James Bond"),
-      new Student(2, "Foxy Brown"),
+      new Student(1, "Terence Bond"),
+      new Student(2, "Tanya Brown"),
       new Student(3, "Anna Smith")
     );
 
