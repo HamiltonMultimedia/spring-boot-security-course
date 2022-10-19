@@ -47,21 +47,33 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
         UserDetails tanyaUser = User.builder()
                 .username("tanya")
                 .password(passwordEncoder.encode("password"))
+<<<<<<< HEAD
                 .roles(STUDENT.name()) // ROLE_STUDENT
+=======
+//                .roles(STUDENT.name()) // ROLE_STUDENT
+>>>>>>> a368e71 (Restored Missing Branches)
                 .authorities(STUDENT.getGrantedAuthorities())
                 .build();
 
         UserDetails terenceUser = User.builder()
                 .username("terence")
                 .password(passwordEncoder.encode("password123"))
+<<<<<<< HEAD
                 .roles(ADMIN.name()) // ROLE_ADMIN
+=======
+//                .roles(ADMIN.name()) // ROLE_ADMIN
+>>>>>>> a368e71 (Restored Missing Branches)
                 .authorities(ADMIN.getGrantedAuthorities())
                 .build();
 
         UserDetails patrickUser = User.builder()
                 .username("patrick")
                 .password(passwordEncoder.encode("password456"))
+<<<<<<< HEAD
                 .roles(ADMINTRAINEE.name()) // ROLE_ADMINTRAINEE
+=======
+//                .roles(ADMINTRAINEE.name()) // ROLE_ADMINTRAINEE
+>>>>>>> a368e71 (Restored Missing Branches)
                 .authorities(ADMINTRAINEE.getGrantedAuthorities())
                 .build();
 
