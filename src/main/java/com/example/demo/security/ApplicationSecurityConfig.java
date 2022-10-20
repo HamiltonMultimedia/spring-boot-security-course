@@ -69,7 +69,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
         );
     }
 
-    private static HttpSecurity getHttp(HttpSecurity http) {
-        return http;
-    }
+//    private static HttpSecurity getHttp(HttpSecurity http) {
+//        return http;
+//    }
 }
