@@ -10,6 +10,8 @@ import java.util.Optional;
 
 import static com.example.demo.security.ApplicationUserRole.*;
 
+// Tests Passed
+
 @Repository("fake")
 public class FakeApplicationUserDaoService implements ApplicationUserDao {
 
