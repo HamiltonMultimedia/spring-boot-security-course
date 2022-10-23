@@ -1,12 +1,10 @@
 package com.example.demo.auth;
 
-import com.example.demo.student.Student;
 import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,6 +17,7 @@ public class FakeApplicationUserDaoService implements ApplicationUserDao {
 
     @Autowired
     public FakeApplicationUserDaoService(PasswordEncoder passwordEncoder) {
+
         this.passwordEncoder = passwordEncoder;
     }
     @Override
@@ -30,7 +29,8 @@ public class FakeApplicationUserDaoService implements ApplicationUserDao {
     }
 
     private List<ApplicationUser> getApplicationUsers() {
-        List<ApplicationUser> applicationUsers = Lists.newArrayList(
+
+        return Lists.newArrayList(
                 new ApplicationUser(
                         "tanya",
                         passwordEncoder.encode("password"),
@@ -61,7 +61,5 @@ public class FakeApplicationUserDaoService implements ApplicationUserDao {
 
 
         );
-
-        return applicationUsers;
     }
 }
